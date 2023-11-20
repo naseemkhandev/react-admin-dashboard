@@ -11,6 +11,7 @@ export default {
 				darkBg: "#0b1437",
 				"dark-color": "#111C44",
 				textColor: "#A3AED0",
+				headingColor: "#2B3674",
 			},
 		},
 	},
