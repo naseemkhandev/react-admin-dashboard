@@ -1,9 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "./pages/home/Home";
-import Users from "./pages/users/Users";
-import Layout from "./components/Layout";
-import PageNotFound from "./components/PageNotFound";
+import {
+	Dashboard,
+	Layout,
+	NftMarketplace,
+	Tables,
+	Kanban,
+	Profile,
+	SignIn,
+	PageNotFound,
+} from "./pages/index";
 
 const App = () => {
 	const router = createBrowserRouter([
@@ -13,13 +19,29 @@ const App = () => {
 			children: [
 				{
 					path: "/",
-					element: <Home />,
+					element: <Dashboard />,
 				},
 				{
-					path: "users",
-					element: <Users />,
+					path: "nft-marketplace",
+					element: <NftMarketplace />,
+				},
+				{
+					path: "tables",
+					element: <Tables />,
+				},
+				{
+					path: "kanban",
+					element: <Kanban />,
+				},
+				{
+					path: "profile",
+					element: <Profile />,
 				},
 			],
+		},
+		{
+			path: "sign-in",
+			element: <SignIn />,
 		},
 		{
 			path: "*",
