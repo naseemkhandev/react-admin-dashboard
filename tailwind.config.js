@@ -10,6 +10,7 @@ export default {
 				lightBg: "#F4F7FE",
 				darkBg: "#0b1437",
 				"dark-color": "#111C44",
+				textColor: "#A3AED0",
 			},
 		},
 	},
