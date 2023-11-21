@@ -96,3 +96,72 @@ export const todayData = [
 		spend: 3800,
 	},
 ];
+
+export const weeklyRevenue = [
+	{
+		name: 17,
+		visit: 6000,
+		spend: 5400,
+		earning: 5400,
+	},
+	{
+		name: 18,
+		visit: 4200,
+		spend: 1400,
+		earning: 9400,
+	},
+	{
+		name: 19,
+		visit: 3000,
+		spend: 8400,
+		earning: 5400,
+	},
+	{
+		name: 20,
+		visit: 2000,
+		spend: 8400,
+		earning: 9400,
+	},
+	{
+		name: 21,
+		visit: 4000,
+		spend: 2400,
+		earning: 5400,
+	},
+	{
+		name: 22,
+		visit: 3000,
+		spend: 1398,
+		earning: 4321,
+	},
+	{
+		name: 23,
+		visit: 2000,
+		spend: 9800,
+		earning: 5400,
+	},
+	{
+		name: 24,
+		visit: 3242,
+		spend: 2323,
+		earning: 5400,
+	},
+	{
+		name: 25,
+		visit: 1890,
+		spend: 4800,
+		earning: 5400,
+	},
+	{
+		name: 26,
+		visit: 2390,
+		spend: 3800,
+		earning: 5400,
+	},
+	{
+		name: 27,
+		visit: 2390,
+		spend: 3800,
+		earning: 5400,
+	},
+];

@@ -30,7 +30,7 @@ const TotalSpend = () => {
 	};
 
 	return (
-		<div className="w-full bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
+		<div className="w-full h-full bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
 			<div className="flex items-center justify-between">
 				<ChartDate
 					icon={FaRegCalendar}
@@ -44,13 +44,13 @@ const TotalSpend = () => {
 				</div>
 			</div>
 
-			<div className="flex items-start gap-5">
+			<div className="flex items-start flex-col xl:flex-row">
 				<div className="flex flex-col gap-5 w-full flex-[.5]">
 					<div>
-						<h2 className="text-xl md:text-2xl xl:text-[34px] font-semibold text-headingColor dark:text-white">
+						<h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[34px] font-semibold text-headingColor dark:text-white">
 							$37.5K
 						</h2>
-						<div className="flex items-center gap-3 mt-1">
+						<div className="flex items-center gap-3 mt-1 whitespace-nowrap">
 							<p className="text-textColor text-sm font-[500]">Total Spent</p>
 							<p className="text-green-color flex items-center gap-1">
 								<IoMdArrowDropup className="text-lg" />
@@ -64,15 +64,11 @@ const TotalSpend = () => {
 					</p>
 				</div>
 
-				<div className="w-full h-72 flex-[2] text-xs text-textColor dark:text-white">
+				<div className="w-full h-96 xl:h-72 flex-[2] text-xs text-textColor dark:text-white">
 					<ResponsiveContainer width="100%" height="100%">
-						<LineChart
-							// data={chartDate === "This month" ? monthlyData : weeklyData}
-							data={getChartData()}
-						>
+						<LineChart data={getChartData()}>
 							<XAxis dataKey="name" />
 							<Tooltip />
-							<Legend />
 							<Line
 								type="monotone"
 								dataKey="spend"
