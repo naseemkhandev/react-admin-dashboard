@@ -33,7 +33,7 @@ const Analytics = () => {
 						$574.34
 					</h2>
 					<p className="text-textColor text-xs font-[500] mt-1">
-						<span className="text-green-400 font-semibold">+23%</span> since
+						<span className="text-green-color font-semibold">+23%</span> since
 						last month
 					</p>
 				</div>

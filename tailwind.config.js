@@ -12,6 +12,7 @@ export default {
 				"dark-color": "#111C44",
 				textColor: "#A3AED0",
 				headingColor: "#2B3674",
+				"green-color": "#05CD99",
 			},
 		},
 	},
