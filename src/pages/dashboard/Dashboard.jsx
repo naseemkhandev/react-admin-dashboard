@@ -1,5 +1,11 @@
+import Analytics from "../../components/Analytics";
+
 const Dashboard = () => {
-	return <div className="text-xl text-primary">Dashboard</div>;
+	return (
+		<div>
+			<Analytics />
+		</div>
+	);
 };
 
 export default Dashboard;

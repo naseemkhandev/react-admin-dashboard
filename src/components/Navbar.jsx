@@ -12,7 +12,7 @@ const Navbar = () => {
 	const [openUserMenu, setOpenUserMenu] = useState(false);
 
 	return (
-		<div className="flex items-end justify-between py-7">
+		<div className="flex lg:items-end justify-between flex-col-reverse lg:flex-row py-7 gap-5">
 			<div className="capitalize">
 				<p className="text-sm text-[#707EAE] dark:text-white font-[500] mb-1">
 					pages/dashboard
@@ -21,8 +21,8 @@ const Navbar = () => {
 					main dashboard
 				</h1>
 			</div>
-			<div className="bg-white rounded-full dark:bg-dark-color flex items-center w-fit p-2 gap-4">
-				<div className="relative">
+			<div className="bg-white rounded-full dark:bg-dark-color flex items-center w-full lg:w-fit p-2 gap-2 sm:gap-4">
+				<div className="relative sm:w-full lg:w-fit">
 					<span className="absolute top-1/2 -translate-y-1/2 left-4 text-lg">
 						<IoSearch className="text-black dark:text-white" />
 					</span>
@@ -31,7 +31,7 @@ const Navbar = () => {
 						name="search"
 						id="search"
 						placeholder="Search"
-						className="rounded-full bg-lightBg dark:bg-darkBg dark:text-white pr-3 pl-10 py-2 outline-none border focus-within:border-primary border-transparent"
+						className="rounded-full w-full bg-lightBg dark:bg-darkBg dark:text-white pr-3 pl-10 py-2 outline-none border focus-within:border-primary border-transparent"
 					/>
 				</div>
 				<FaRegBell className="text-textColor dark:text-white text-lg cursor-pointer" />
