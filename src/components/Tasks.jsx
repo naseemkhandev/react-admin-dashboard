@@ -7,7 +7,7 @@ const Tasks = () => {
 	const [handleChecked, setHandleChecked] = useState(false);
 
 	return (
-		<div className="w-full h-full bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
+		<div className="w-full h-auto bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-2">
 					<input
