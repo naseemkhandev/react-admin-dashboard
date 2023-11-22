@@ -1,8 +1,63 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Admin Dashboard
+## Instructions
+## Prerequisites
 
-Currently, two official plugins are available:
+Make sure you have [Node.js](https://nodejs.org/en) and [Yarn](https://yarnpkg.com/) installed on your machine.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+Clone the repository:
+``` bash
+git clone https://github.com/NaseemKhan005/react-admin-dashboard.git
+```
+Change into the project directory:
+
+``` cd react-admin-dashboard ```
+
+Install dependencies:
+
+``` yarn install ```
+
+# Running the Project
+
+To start the development server, run:
+
+``` yarn dev ```
+
+This will start the development server. Open your browser and visit http://localhost:5173 to view the application.
+
+# Building the Project
+
+To start the development server, run:
+
+``` yarn build ```
+
+# Linting
+
+To lint the code, run:
+
+``` yarn lint ```
+
+# Previewing the Build
+
+To preview the production build, run:
+
+``` yarn preview ```
+
+# Dependencies
+
+Below are some key dependencies used in this project:
+
+- react
+- react-dom
+- react-router-dom
+- recharts
+
+# Dev Dependencies
+
+Some key development dependencies include:
+
+- eslint
+- tailwindcss
+- vite
