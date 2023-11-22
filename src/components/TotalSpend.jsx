@@ -3,17 +3,10 @@ import { FaRegCalendar } from "react-icons/fa6";
 import { IoStatsChart } from "react-icons/io5";
 import { IoMdArrowDropup } from "react-icons/io";
 import { BiSolidCheckCircle } from "react-icons/bi";
-import {
-	LineChart,
-	Line,
-	XAxis,
-	Tooltip,
-	Legend,
-	ResponsiveContainer,
-} from "recharts";
+import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-import ChartDate from "./ChartDate";
 import { weeklyData, monthlyData, todayData } from "../constants/Charts";
+import DateDropDown from "./DateDropDown";
 
 const TotalSpend = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -32,7 +25,7 @@ const TotalSpend = () => {
 	return (
 		<div className="w-full h-full bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
 			<div className="flex items-center justify-between">
-				<ChartDate
+				<DateDropDown
 					icon={FaRegCalendar}
 					showMenu={showMenu}
 					setShowMenu={setShowMenu}

@@ -1,10 +1,11 @@
-const ChartDate = ({
+const DateDropDown = ({
 	icon,
 	showMenu,
 	setShowMenu,
 	chartDate,
 	setChartDate,
 	className,
+	menuClasses,
 }) => {
 	const Icon = icon;
 
@@ -17,26 +18,26 @@ const ChartDate = ({
 			<span className="text-sm font-[500]">{chartDate}</span>
 
 			<div
-				className={`absolute bg-lightBg dark:bg-darkBg top-[120%] left-0 w-52 rounded-lg overflow-hidden transition-all duration-500 ${
+				className={`absolute bg-white shadow-md dark:bg-darkBg top-[120%] w-52 rounded-lg overflow-hidden transition-all duration-500 z-20 ${menuClasses} ${
 					showMenu ? "h-[8.5rem]" : "h-0"
 				}`}
 			>
 				<ul className="m-2">
 					<li
 						onClick={() => setChartDate("This month")}
-						className="p-2 dark:hover:bg-white/5 hover:bg-primary/5 rounded-md"
+						className="p-2 dark:hover:bg-white/5 hover:bg-black/5 rounded-md"
 					>
 						This month
 					</li>
 					<li
 						onClick={() => setChartDate("This week")}
-						className="p-2 dark:hover:bg-white/5 hover:bg-primary/5 rounded-md"
+						className="p-2 dark:hover:bg-white/5 hover:bg-black/5 rounded-md"
 					>
 						This week
 					</li>
 					<li
 						onClick={() => setChartDate("Daily")}
-						className="p-2 dark:hover:bg-white/5 hover:bg-primary/5 rounded-md"
+						className="p-2 dark:hover:bg-white/5 hover:bg-black/5 rounded-md"
 					>
 						Daily
 					</li>
@@ -46,4 +47,4 @@ const ChartDate = ({
 	);
 };
 
-export default ChartDate;
+export default DateDropDown;

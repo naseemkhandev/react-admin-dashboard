@@ -165,3 +165,21 @@ export const weeklyRevenue = [
 		earning: 5400,
 	},
 ];
+
+export const monthlyPieData = [
+	{ name: "Your Files", value: 400 },
+	{ name: "System", value: 300 },
+	{ name: "Default", value: 200 },
+];
+
+export const weeklyPieData = [
+	{ name: "Your Files", value: 800 },
+	{ name: "System", value: 300 },
+	{ name: "Default", value: 500 },
+];
+
+export const dailyPieData = [
+	{ name: "Your Files", value: 100 },
+	{ name: "System", value: 400 },
+	{ name: "Default", value: 200 },
+];

@@ -5,7 +5,7 @@ const Sidebar = () => {
 	const pathname = useLocation().pathname;
 
 	return (
-		<div className="fixed top-0 left-0 w-20 lg:w-72 bg-white dark:bg-dark-color h-screen overflow-hidden">
+		<div className="fixed top-0 left-0 w-20 lg:w-72 bg-white dark:bg-dark-color min-h-screen h-full overflow-hidden">
 			<div className="px-7 lg:px-10 py-7 border-b dark:border-white/10">
 				<h2 className="lg:text-2xl font-extrabold text-headingColor dark:text-white">
 					Visric
