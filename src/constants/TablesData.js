@@ -52,24 +52,6 @@ export const complexTable = [
 	},
 	{
 		name: "Visric PRO",
-		progress: 67,
-		status: "disabled",
-		date: "24 Jan 2021",
-	},
-	{
-		name: "Visric PRO",
-		progress: 59,
-		status: "approved",
-		date: "24 Jan 2021",
-	},
-	{
-		name: "Visric PRO",
-		progress: 40,
-		status: "disabled",
-		date: "24 Jan 2021",
-	},
-	{
-		name: "Visric PRO",
 		progress: 17.5,
 		status: "error",
 		date: "24 Jan 2021",
@@ -85,5 +67,28 @@ export const complexTable = [
 		progress: 64,
 		status: "disabled",
 		date: "24 Jan 2021",
+	},
+];
+
+export const tasks = [
+	{
+		id: 1,
+		name: "landing page design",
+	},
+	{
+		id: 2,
+		name: "landing page design",
+	},
+	{
+		id: 3,
+		name: "landing page design",
+	},
+	{
+		id: 4,
+		name: "landing page design",
+	},
+	{
+		id: 5,
+		name: "landing page design",
 	},
 ];

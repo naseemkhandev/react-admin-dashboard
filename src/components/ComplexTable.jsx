@@ -24,10 +24,10 @@ const ComplexTable = () => {
 			<table className="w-full text-left overflow-auto">
 				<thead className="uppercase text-sm font-medium text-textColor">
 					<tr>
-						<th>name</th>
-						<th>status</th>
-						<th>date</th>
-						<th>progress</th>
+						<th className="pb-2">name</th>
+						<th className="pb-2">status</th>
+						<th className="pb-2">date</th>
+						<th className="pb-2">progress</th>
 					</tr>
 				</thead>
 				<tbody className="border-t">
@@ -57,7 +57,7 @@ const ComplexTable = () => {
 								<div className={`w-full bg-lightBg h-2 rounded-full`} />
 								<div
 									style={{ width: `${item.progress}%` }}
-									className="absolute bottom-2 left-0 h-[.4rem] bg-primary rounded-full"
+									className="absolute left-0 h-2 bottom-[.45rem] bg-primary rounded-full"
 								/>
 							</td>
 						</tr>
