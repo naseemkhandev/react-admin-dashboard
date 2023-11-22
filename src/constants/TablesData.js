@@ -77,18 +77,18 @@ export const tasks = [
 	},
 	{
 		id: 2,
-		name: "landing page design",
+		name: "dashboard builder",
 	},
 	{
 		id: 3,
-		name: "landing page design",
+		name: "mobile app design",
 	},
 	{
 		id: 4,
-		name: "landing page design",
+		name: "illustrations",
 	},
 	{
 		id: 5,
-		name: "landing page design",
+		name: "promotional LP",
 	},
 ];

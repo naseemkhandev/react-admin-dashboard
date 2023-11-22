@@ -8,10 +8,13 @@ import ComplexTable from "../../components/ComplexTable";
 import Tasks from "../../components/Tasks";
 import DatePicker from "../../components/DatePicker";
 import BusinessCard from "../../components/BusinessCard";
+import TeamMembers from "../../components/TeamMembers";
+import Security from "../../components/Security";
+import Brand from "../../components/Brand";
 
 const Dashboard = () => {
 	return (
-		<div className="flex flex-col gap-5">
+		<div className="flex flex-col gap-5 pb-8">
 			<Analytics />
 			<div className="flex justify-between xl:items-start flex-col md:flex-row gap-5">
 				<TotalSpend />
@@ -41,9 +44,9 @@ const Dashboard = () => {
 
 			<div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
 				<BusinessCard />
-				<BusinessCard />
-				<BusinessCard />
-				<BusinessCard />
+				<TeamMembers />
+				<Security />
+				<Brand />
 			</div>
 		</div>
 	);

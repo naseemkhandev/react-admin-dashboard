@@ -4,7 +4,7 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 const BusinessCard = () => {
 	return (
-		<div className="w-full h-auto bg-white dark:bg-dark-color rounded-2xl">
+		<div className="w-full h-auto bg-white dark:bg-dark-color rounded-2xl flex flex-col justify-between">
 			<div className="flex flex-col gap-8 p-6">
 				<div className="flex items-center gap-3">
 					<span className="p-3 text-xl rounded-xl text-[#EE5D50] bg-[#EE5D50]/10 dark:text-white dark:bg-white/5">

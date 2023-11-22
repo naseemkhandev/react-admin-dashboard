@@ -4,7 +4,13 @@ import { PiDotsSixVerticalBold } from "react-icons/pi";
 import { tasks } from "../constants/TablesData";
 
 const Tasks = () => {
-	const [handleChecked, setHandleChecked] = useState(false);
+	const [checkedStatus, setCheckedStatus] = useState({});
+	const handleCheckboxChange = (taskId) => {
+		setCheckedStatus((prevStatus) => ({
+			...prevStatus,
+			[taskId]: !prevStatus[taskId],
+		}));
+	};
 
 	return (
 		<div className="w-full h-auto bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col gap-8">
@@ -31,18 +37,19 @@ const Tasks = () => {
 						<div key={task.id} className="flex items-center gap-2">
 							<input
 								type="checkbox"
-								name="task"
-								id="task"
-								onClick={() => setHandleChecked(!handleChecked)}
+								name={task.name}
+								id={task.id}
+								checked={checkedStatus[task.id] || false}
+								onChange={() => handleCheckboxChange(task.id)}
 								className="cursor-pointer w-3 2xl:w-4 aspect-square accent-primary"
 							/>
 							<label
-								htmlFor="task"
+								htmlFor={task.id}
 								className={`text-xs 2xl:text-base font-semibold cursor-pointer select-none ${
-									handleChecked ? "text-black" : "text-textColor"
+									checkedStatus[task.id] ? "text-black" : "text-textColor"
 								}`}
 							>
-								landing page designs
+								{task.name}
 							</label>
 						</div>
 						<div className="text-textColor 2xl:text-2xl cursor-pointer">
