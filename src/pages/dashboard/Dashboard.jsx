@@ -7,6 +7,7 @@ import WeeklyRevenue from "../../components/WeeklyRevenue";
 import ComplexTable from "../../components/ComplexTable";
 import Tasks from "../../components/Tasks";
 import DatePicker from "../../components/DatePicker";
+import BusinessCard from "../../components/BusinessCard";
 
 const Dashboard = () => {
 	return (
@@ -36,6 +37,13 @@ const Dashboard = () => {
 					<Tasks />
 					<DatePicker />
 				</div>
+			</div>
+
+			<div className="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
+				<BusinessCard />
+				<BusinessCard />
+				<BusinessCard />
+				<BusinessCard />
 			</div>
 		</div>
 	);
