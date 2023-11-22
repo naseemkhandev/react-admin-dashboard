@@ -1,60 +1,63 @@
-Instructions to Run the Code
-Install Dependencies:
-Ensure that you have Yarn installed on your machine. If not, you can install it globally using:
 
-bash
-Copy code
-npm install -g yarn
-Clone the Repository:
-Clone the project repository from the source.
+# React Admin Dashboard
+## Instructions
+## Prerequisites
 
-bash
-Copy code
-git clone <repository-url>
-Navigate to Project Directory:
-Change your current working directory to the project folder.
+Make sure you have [Node.js](https://nodejs.org/en) and [Yarn](https://yarnpkg.com/) installed on your machine.
 
-bash
-Copy code
-cd admin-dashboard
-Install Node Modules:
-Install project dependencies using Yarn.
+## Installation
 
-bash
-Copy code
-yarn
-Run the Development Server:
-Start the development server to run the project locally.
+Clone the repository:
+``` bash
+git clone https://github.com/NaseemKhan005/react-admin-dashboard.git
+```
+Change into the project directory:
 
-bash
-Copy code
-yarn dev
-This command will launch the development server, and you can view the project by opening your browser and navigating to http://localhost:3000.
+``` cd react-admin-dashboard ```
 
-Build for Production:
-If you want to build the project for production, use the following command:
+Install dependencies:
 
-bash
-Copy code
-yarn build
-This will create a dist directory with optimized and minified production-ready code.
+``` yarn install ```
 
-Linting:
-To run ESLint for linting the code, use:
+# Running the Project
 
-bash
-Copy code
-yarn lint
-Preview Production Build:
-To preview the production build locally, use:
+To start the development server, run:
 
-bash
-Copy code
-yarn preview
-This command will serve the production build, and you can view it by opening your browser and navigating to http://localhost:5000.
+``` yarn dev ```
 
-Notes:
-Ensure that you have Node.js installed on your machine.
-The project uses Vite for development and building, and the scripts are configured accordingly.
-Adjust the <repository-url> placeholder with the actual URL of your project repository.
-These instructions assume that you have a basic understanding of using the command line and have the necessary software installed on your machine.
+This will start the development server. Open your browser and visit http://localhost:5173 to view the application.
+
+# Building the Project
+
+To start the development server, run:
+
+``` yarn build ```
+
+# Linting
+
+To lint the code, run:
+
+``` yarn lint ```
+
+# Previewing the Build
+
+To preview the production build, run:
+
+``` yarn preview ```
+
+# Dependencies
+
+Below are some key dependencies used in this project:
+
+- react
+- react-dom
+- react-router-dom
+- recharts
+
+# Dev Dependencies
+
+Some key development dependencies include:
+
+- eslint
+- tailwindcss
+- vite
