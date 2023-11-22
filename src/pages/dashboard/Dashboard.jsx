@@ -4,6 +4,7 @@ import DailyTraffic from "../../components/DailyTraffic";
 import DailyEarning from "../../components/DailyEarning";
 import TotalSpend from "../../components/TotalSpend";
 import WeeklyRevenue from "../../components/WeeklyRevenue";
+import ComplexTable from "../../components/ComplexTable";
 
 const Dashboard = () => {
 	return (
@@ -22,6 +23,11 @@ const Dashboard = () => {
 				<div className="w-full flex flex-col sm:flex-row items-start gap-5">
 					<DailyTraffic />
 					<DailyEarning />
+				</div>
+			</div>
+			<div className="flex justify-between flex-col xl:flex-row gap-5">
+				<div className="w-full">
+					<ComplexTable />
 				</div>
 			</div>
 		</div>

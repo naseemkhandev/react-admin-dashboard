@@ -1,4 +1,5 @@
-import { IoStatsChart } from "react-icons/io5";
+import { BsThreeDots } from "react-icons/bs";
+
 import { checkTable } from "../constants/TablesData";
 
 const CheckTable = () => {
@@ -11,7 +12,7 @@ const CheckTable = () => {
 					</h2>
 				</div>
 				<div className="w-fit bg-primary/5 text-primary dark:text-white dark:bg-white/5 text-xl p-2 rounded-lg">
-					<IoStatsChart />
+					<BsThreeDots />
 				</div>
 			</div>
 
