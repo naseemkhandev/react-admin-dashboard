@@ -22,7 +22,18 @@ const AddMember = ({ addMember, setAddMember, onAddMember }) => {
 		onAddMember(newMember);
 
 		setAddMember(false);
+
+		setNewMemberData({
+			image: "",
+			name: "",
+			role: "",
+		});
 	};
+
+	const isFormValid =
+		newMemberData.image.trim() !== "" &&
+		newMemberData.name.trim() !== "" &&
+		newMemberData.role.trim() !== "";
 
 	return (
 		<div
@@ -102,7 +113,12 @@ const AddMember = ({ addMember, setAddMember, onAddMember }) => {
 					<button
 						type="button"
 						onClick={handleAddMember}
-						className="bg-[#4318FF] hover:bg-[#4318FF]/90 text-white dark:bg-secondary dark:hover:bg-secondary/90 capitalize px-4 py-3 2xl:py-3.5 font-medium rounded-xl mt-3"
+						className={`bg-[#4318FF] hover:bg-[#4318FF]/90 text-white dark:bg-secondary dark:hover:bg-secondary/90 capitalize px-4 py-3 2xl:py-3.5 font-medium rounded-xl mt-3 ${
+							isFormValid
+								? ""
+								: "bg-primary/50 hover:bg-primary/50 cursor-not-allowed dark:bg-white/5"
+						}`}
+						disabled={!isFormValid}
 					>
 						Add Member
 					</button>
