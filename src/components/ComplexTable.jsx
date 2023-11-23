@@ -57,7 +57,7 @@ const ComplexTable = () => {
 								<div className={`w-full bg-lightBg h-2 rounded-full`} />
 								<div
 									style={{ width: `${item.progress}%` }}
-									className="absolute left-0 h-2 bottom-[.45rem] bg-primary rounded-full"
+									className="absolute left-0 h-2 bottom-[.465rem] bg-primary rounded-full"
 								/>
 							</td>
 						</tr>

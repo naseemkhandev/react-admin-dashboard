@@ -26,7 +26,7 @@ const DailyEarning = () => {
 	const COLORS = ["#4318FF", "#6AD2FF", "#e6edf9"];
 
 	return (
-		<div className="w-full h-full bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col justify-between gap-8">
+		<div className="w-full h-auto bg-white dark:bg-dark-color p-6 rounded-2xl flex flex-col justify-between gap-8">
 			<div className="flex items-center justify-between">
 				<h2 className="capitalize text-sm 2xl:text-base font-bold text-headingColor dark:text-white">
 					Daily Earning

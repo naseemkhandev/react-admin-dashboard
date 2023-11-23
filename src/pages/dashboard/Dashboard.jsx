@@ -21,12 +21,12 @@ const Dashboard = () => {
 				<WeeklyRevenue />
 			</div>
 
-			<div className="flex justify-between flex-col xl:flex-row gap-5">
+			<div className="flex justify-between flex-col 2xl:flex-row gap-5">
 				<div className="w-full">
 					<CheckTable />
 				</div>
 
-				<div className="w-full flex flex-col sm:flex-row items-start gap-5">
+				<div className="w-full flex flex-col sm:flex-row gap-5">
 					<DailyTraffic />
 					<DailyEarning />
 				</div>

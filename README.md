@@ -1,6 +1,7 @@
-
 # React Admin Dashboard
+
 ## Instructions
+
 ## Prerequisites
 
 Make sure you have [Node.js](https://nodejs.org/en) and [Yarn](https://yarnpkg.com/) installed on your machine.
@@ -8,22 +9,24 @@ Make sure you have [Node.js](https://nodejs.org/en) and [Yarn](https://yarnpkg.c
 ## Installation
 
 Clone the repository:
-``` bash
+
+```bash
 git clone https://github.com/NaseemKhan005/react-admin-dashboard.git
 ```
+
 Change into the project directory:
 
-``` cd react-admin-dashboard ```
+`cd react-admin-dashboard`
 
 Install dependencies:
 
-``` yarn install ```
+`yarn install`
 
 # Running the Project
 
 To start the development server, run:
 
-``` yarn dev ```
+`yarn dev`
 
 This will start the development server. Open your browser and visit http://localhost:5173 to view the application.
 
@@ -31,19 +34,19 @@ This will start the development server. Open your browser and visit http://local
 
 To start the development server, run:
 
-``` yarn build ```
+`yarn build`
 
 # Linting
 
 To lint the code, run:
 
-``` yarn lint ```
+`yarn lint`
 
 # Previewing the Build
 
 To preview the production build, run:
 
-``` yarn preview ```
+`yarn preview`
 
 # Dependencies
 
@@ -53,6 +56,9 @@ Below are some key dependencies used in this project:
 - react-dom
 - react-router-dom
 - recharts
+- date-fns
+- react-dnd
+- react-dnd-html5-backend
 
 # Dev Dependencies
 
