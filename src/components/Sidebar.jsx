@@ -9,7 +9,7 @@ const Sidebar = ({ handleSidebar, setHandleSidebar }) => {
 
 	return (
 		<div
-			className={`fixed top-0 bg-white dark:bg-dark-color min-h-screen h-full overflow-hidden transition-all duration-500 z-10 ${
+			className={`fixed top-0 bg-white dark:bg-dark-color min-h-screen h-full overflow-hidden transition-all duration-500 z-50 ${
 				handleSidebar
 					? "-left-full md:left-0 w-20 xl:w-72"
 					: "left-0 w-72 shadow-2xl drop-shadow-md lg:shadow-none lg:drop-shadow-none"
@@ -19,7 +19,9 @@ const Sidebar = ({ handleSidebar, setHandleSidebar }) => {
 				<h2 className="text-2xl font-extrabold text-headingColor dark:text-white">
 					<span
 						className={`transition-all duration-500 ${
-							handleSidebar ? "ml-2 lg:-ml-1 xl:ml-0 text-3xl xl:text-2xl" : "ml-0"
+							handleSidebar
+								? "ml-2 lg:-ml-1 xl:ml-0 text-3xl xl:text-2xl"
+								: "ml-0"
 						}`}
 					>
 						V
@@ -41,7 +43,9 @@ const Sidebar = ({ handleSidebar, setHandleSidebar }) => {
 
 				<span
 					onClick={() => setHandleSidebar(!handleSidebar)}
-					className="absolute top-5 right-0 bg-primary/5 md:block hidden dark:text-white dark:bg-white/5 hover:bg-primary/10 dark:hover:bg-white/10 py-4 rounded-l-lg text-lg cursor-pointer xl:hidden"
+					className={`absolute top-5 right-0 bg-primary/5 md:block hidden dark:text-white dark:bg-white/5 hover:bg-primary/10 dark:hover:bg-white/10 py-4 text-lg cursor-pointer xl:hidden ${
+						!handleSidebar ? "rotate-0 rounded-l-lg" : "rotate-180 rounded-r-lg"
+					}`}
 				>
 					<MdOutlineKeyboardArrowLeft />
 				</span>
@@ -54,7 +58,7 @@ const Sidebar = ({ handleSidebar, setHandleSidebar }) => {
 							to={link.path}
 							className={`flex items-center dark:text-white dark:before:bg-secondary before:rounded-full capitalize transition-all duration-500 py-[.4rem] before:right-0 w-full ${
 								handleSidebar
-									? "w-fit xl:gap-3 gap-8 before:absolute before:h-10 before:bg-primary"
+									? "gap-8 xl:gap-3 w-[13rem] before:absolute before:h-10 before:bg-primary"
 									: "gap-3 w-full relative before:absolute before:top-0 before:h-full before:bg-primary"
 							}
 							 ${

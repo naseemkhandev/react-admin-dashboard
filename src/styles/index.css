@@ -43,19 +43,20 @@ html {
 	color: #fff;
 }
 
-.purple {
+.purple,
+.green {
 	border: 0px;
-	box-shadow: 0px;
+	box-shadow: 0px 0px 0px transparent;
 }
 
 .purple .rmdp-wrapper {
 	border: 0px solid #fff;
-	box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px transparent;
 }
 
 .purple .rmdp-panel-body li {
 	background-color: #fff;
-	box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px transparent;
 }
 
 .purple .rmdp-week-day {
@@ -68,7 +69,7 @@ html {
 
 .purple .rmdp-range {
 	background-color: #ffffff1a;
-	box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px transparent;
 }
 
 .purple .rmdp-arrow {
@@ -84,7 +85,7 @@ html {
 .purple .rmdp-arrow-container:hover {
 	background-color: #7551ff;
 	padding-top: 3px;
-	box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px transparent;
 }
 
 .purple .rmdp-panel-body::-webkit-scrollbar-thumb {
@@ -103,7 +104,7 @@ html {
 
 .purple .rmdp-day.rmdp-selected span:not(.highlight) {
 	background-color: #ffffff1a;
-	box-shadow: 0 0 0px #fff;
+	box-shadow: 0 0 0px transparent;
 }
 
 .purple .rmdp-day:not(.rmdp-day-hidden) span:hover {
@@ -130,12 +131,12 @@ html {
 /* react date range for light theme */
 .green .rmdp-wrapper {
 	border: 0px solid #000;
-	box-shadow: 0 0 0px #000;
+	box-shadow: 0 0 0 transparent;
 }
 
 .green .rmdp-panel-body li {
 	background-color: #000;
-	box-shadow: 0 0 0px var(--rmdp-secondary-green);
+	box-shadow: 0 0 0px transparent;
 }
 
 .green .rmdp-week-day {
@@ -149,7 +150,7 @@ html {
 .green .rmdp-range {
 	background-color: #4218ff10;
 	color: #4318ff;
-	box-shadow: 0 0 0px #000;
+	box-shadow: 0 0 0 transparent;
 }
 
 .green .rmdp-arrow {
@@ -160,7 +161,7 @@ html {
 .green .rmdp-arrow-container:hover {
 	background-color: #4318ff;
 	padding-top: 2px;
-	box-shadow: 0 0 0px #000;
+	box-shadow: 0 0 0 transparent;
 }
 
 .green .rmdp-panel-body::-webkit-scrollbar-thumb {
@@ -178,7 +179,7 @@ html {
 
 .green .rmdp-day.rmdp-selected span:not(.highlight) {
 	background-color: #7551ff;
-	box-shadow: 0 0 0px #000;
+	box-shadow: 0 0 0 transparent;
 }
 
 .green .rmdp-day:not(.rmdp-day-hidden) span:hover {
@@ -200,4 +201,15 @@ html {
 
 .green .rmdp-button:not(.rmdp-action-button):hover {
 	background-color: #000;
+}
+
+.rmdp-shadow {
+	box-shadow: 0 0 0px transparent !important;
+}
+
+.rmdp-wrapper {
+	box-shadow: 0 0 0px transparent !important;
+}
+.rmdp-wrapper .rmdp-shadow {
+	box-shadow: 0 0 0px transparent !important;
 }

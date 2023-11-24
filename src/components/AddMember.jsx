@@ -43,7 +43,7 @@ const AddMember = ({ addMember, setAddMember, onAddMember }) => {
 		>
 			<form
 				action="#"
-				className="w-full sm:w-96 2xl:w-1/3 p-6 rounded-xl bg-white dark:bg-dark-color"
+				className="w-[95%] sm:w-96 2xl:w-1/3 p-6 rounded-xl bg-white dark:bg-dark-color"
 			>
 				<div className="flex items-start justify-between">
 					<h2 className="text-headingColor text-lg font-semibold dark:text-white mb-5">
