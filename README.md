@@ -56,9 +56,10 @@ Below are some key dependencies used in this project:
 - react-dom
 - react-router-dom
 - recharts
-- date-fns
+- react-multi-date-picker
 - react-dnd
 - react-dnd-html5-backend
+- react-icons
 
 # Dev Dependencies
 

@@ -28,3 +28,176 @@ html {
 .team::-webkit-scrollbar {
 	width: 5px;
 }
+
+.scrollbar::-webkit-scrollbar {
+	height: 3px;
+}
+
+/* date range picker for dark mode */
+.bg-dark.rmdp-wrapper,
+.bg-dark .rmdp-month-picker,
+.bg-dark .rmdp-year-picker,
+.bg-dark .rmdp-time-picker div input,
+.rmdp-container .bg-dark.ep-arrow::after {
+	background-color: #111c44;
+	color: #fff;
+}
+
+.purple {
+	border: 0px;
+	box-shadow: 0px;
+}
+
+.purple .rmdp-wrapper {
+	border: 0px solid #fff;
+	box-shadow: 0 0 0px #fff;
+}
+
+.purple .rmdp-panel-body li {
+	background-color: #fff;
+	box-shadow: 0 0 0px #fff;
+}
+
+.purple .rmdp-week-day {
+	color: #fff;
+}
+
+.purple .rmdp-day.rmdp-deactive {
+	color: #fff;
+}
+
+.purple .rmdp-range {
+	background-color: #ffffff1a;
+	box-shadow: 0 0 0px #fff;
+}
+
+.purple .rmdp-arrow {
+	border: solid #fff;
+	border-width: 0;
+	color: #fff;
+}
+
+.purple .rmdp-arrow-container {
+	background-color: transparent;
+}
+
+.purple .rmdp-arrow-container:hover {
+	background-color: #7551ff;
+	padding-top: 3px;
+	box-shadow: 0 0 0px #fff;
+}
+
+.purple .rmdp-panel-body::-webkit-scrollbar-thumb {
+	background: #ffffff1a;
+	border-radius: 50px;
+}
+
+.purple .rmdp-day.rmdp-today span {
+	background-color: #7551ff;
+}
+
+.purple .rmdp-rtl .rmdp-panel {
+	border-left: 0px;
+	border-right: 0px solid #fff;
+}
+
+.purple .rmdp-day.rmdp-selected span:not(.highlight) {
+	background-color: #ffffff1a;
+	box-shadow: 0 0 0px #fff;
+}
+
+.purple .rmdp-day:not(.rmdp-day-hidden) span:hover {
+	background-color: #7551ff !important;
+}
+
+.purple .b-deselect {
+	color: #fff;
+	background-color: white;
+}
+
+.purple .rmdp-action-button {
+	color: #fff;
+}
+
+.purple .rmdp-button:not(.rmdp-action-button) {
+	background-color: #fff;
+}
+
+.purple .rmdp-button:not(.rmdp-action-button):hover {
+	background-color: #fff;
+}
+
+/* react date range for light theme */
+.green .rmdp-wrapper {
+	border: 0px solid #000;
+	box-shadow: 0 0 0px #000;
+}
+
+.green .rmdp-panel-body li {
+	background-color: #000;
+	box-shadow: 0 0 0px var(--rmdp-secondary-green);
+}
+
+.green .rmdp-week-day {
+	color: #000;
+}
+
+.green .rmdp-day.rmdp-deactive {
+	color: orange;
+}
+
+.green .rmdp-range {
+	background-color: #4218ff10;
+	color: #4318ff;
+	box-shadow: 0 0 0px #000;
+}
+
+.green .rmdp-arrow {
+	border: solid #000;
+	border-width: 0;
+}
+
+.green .rmdp-arrow-container:hover {
+	background-color: #4318ff;
+	padding-top: 2px;
+	box-shadow: 0 0 0px #000;
+}
+
+.green .rmdp-panel-body::-webkit-scrollbar-thumb {
+	background: #ffffff1a;
+}
+
+.green .rmdp-day.rmdp-today span {
+	background-color: #4318ff;
+}
+
+.green .rmdp-rtl .rmdp-panel {
+	border-left: 0;
+	border-right: 0px solid #000;
+}
+
+.green .rmdp-day.rmdp-selected span:not(.highlight) {
+	background-color: #7551ff;
+	box-shadow: 0 0 0px #000;
+}
+
+.green .rmdp-day:not(.rmdp-day-hidden) span:hover {
+	background-color: #4318ff !important;
+}
+
+.green .b-deselect {
+	color: #000;
+	background-color: white;
+}
+
+.green .rmdp-action-button {
+	color: #000;
+}
+
+.green .rmdp-button:not(.rmdp-action-button) {
+	background-color: #000;
+}
+
+.green .rmdp-button:not(.rmdp-action-button):hover {
+	background-color: #000;
+}

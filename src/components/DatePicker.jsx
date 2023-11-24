@@ -1,27 +1,35 @@
 import { useState } from "react";
-import { DateRange } from "react-date-range";
+import { Calendar, DateObject } from "react-multi-date-picker";
 
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
+import "react-multi-date-picker/styles/backgrounds/bg-dark.css";
+import "react-multi-date-picker/styles/colors/purple.css";
+import "react-multi-date-picker/styles/colors/green.css";
+
+import { useTheme } from "../context/ThemeProvider";
 
 const DatePicker = () => {
-	const [date, setDate] = useState([
-		{
-			startDate: new Date(),
-			endDate: null,
-			key: "selection",
-		},
-	]);
+	const [values, setValues] = useState([new DateObject()]);
+	const { theme } = useTheme();
 
 	return (
 		<div className="md:w-fit h-auto bg-white dark:bg-dark-color p-6 rounded-2xl flex items-center justify-center">
-			<DateRange
-				editableDateInputs={true}
-				onChange={(item) => setDate([item.selection])}
-				moveRangeOnFirstSelection={false}
-				ranges={date}
-				className="dark:bg-dark-color checked:text-white dark:text-white md:w-fit mx-auto"
-			/>
+			{theme === "light" ? (
+				<Calendar
+					value={values}
+					onChange={setValues}
+					range
+					rangeHover
+					className={`md:w-full bg-transparent shadow-none green`}
+				/>
+			) : (
+				<Calendar
+					value={values}
+					onChange={setValues}
+					range
+					rangeHover
+					className={`md:w-full bg-transparent shadow-none bg-dark purple`}
+				/>
+			)}
 		</div>
 	);
 };

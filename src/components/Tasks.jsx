@@ -23,8 +23,8 @@ const DraggableItem = ({ id, name, link, index, moveItem }) => {
 	});
 
 	return (
-		<div ref={(node) => ref(drop(node))} className="py-2 cursor-pointer">
-			<div className="capitalize flex items-center justify-between">
+		<div ref={(node) => ref(drop(node))} className="cursor-pointer">
+			<div className="capitalize flex items-center py-3 justify-between active:bg-black/5 dark:active:bg-white/5 active:rounded-lg active:px-2">
 				<div className="flex items-center gap-2">
 					<input
 						type="checkbox"
@@ -37,7 +37,9 @@ const DraggableItem = ({ id, name, link, index, moveItem }) => {
 					<label
 						htmlFor={id}
 						className={`text-xs 2xl:text-base font-semibold cursor-pointer select-none ${
-							checkedStatus[id] ? "text-black" : "text-textColor"
+							checkedStatus[id]
+								? "text-black dark:text-white"
+								: "text-textColor"
 						}`}
 					>
 						{name}
@@ -84,7 +86,7 @@ const Tasks = () => {
 						<BsThreeDots />
 					</div>
 				</div>
-				<div className="flex flex-col gap-1">
+				<div>
 					{characters.map((item, index) => (
 						<DraggableItem
 							key={item.id}

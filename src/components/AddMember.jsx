@@ -37,8 +37,8 @@ const AddMember = ({ addMember, setAddMember, onAddMember }) => {
 
 	return (
 		<div
-			className={`fixed top-0 left-0 w-full h-screen bg-black/50 flex items-center justify-center transition-all duration-700 ${
-				addMember ? "top-0 opacity-100 z-[80]" : "-top-1/2 opacity-0 -z-[80]"
+			className={`fixed top-0 left-0 w-full h-screen bg-black/50 flex items-center justify-center transition-all duration-500 ${
+				addMember ? "top-0 opacity-100 z-[100]" : "-top-full opacity-0 -z-[100]"
 			}`}
 		>
 			<form
@@ -113,10 +113,10 @@ const AddMember = ({ addMember, setAddMember, onAddMember }) => {
 					<button
 						type="button"
 						onClick={handleAddMember}
-						className={`bg-[#4318FF] hover:bg-[#4318FF]/90 text-white dark:bg-secondary dark:hover:bg-secondary/90 capitalize px-4 py-3 2xl:py-3.5 font-medium rounded-xl mt-3 ${
+						className={`bg-[#4318FF] hover:bg-[#4318FF]/90 dark:bg-secondary dark:hover:bg-secondary/90 capitalize px-4 py-3 2xl:py-3.5 font-medium rounded-xl mt-3 ${
 							isFormValid
-								? ""
-								: "bg-primary/50 hover:bg-primary/50 cursor-not-allowed dark:bg-white/5"
+								? "text-white"
+								: "bg-primary/50 hover:bg-primary/50 cursor-not-allowed dark:bg-white/5 dark:hover:bg-white/5 text-zinc-200/80 dark:text-zinc-300/50"
 						}`}
 						disabled={!isFormValid}
 					>
