@@ -19,7 +19,7 @@ const DatePicker = () => {
 					onChange={setValues}
 					range
 					rangeHover
-					className={`md:w-full bg-transparent shadow-none green`}
+					className={`md:w-full bg-transparent dark:bg-transparent shadow-none dark:shadow-none green`}
 				/>
 			) : (
 				<Calendar
@@ -27,7 +27,7 @@ const DatePicker = () => {
 					onChange={setValues}
 					range
 					rangeHover
-					className={`md:w-full bg-transparent shadow-none bg-dark purple`}
+					className={`md:w-full bg-transparent dark:bg-transparent shadow-none dark:shadow-none bg-dark purple`}
 				/>
 			)}
 		</div>
